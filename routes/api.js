@@ -227,7 +227,7 @@ Akhir Pesan Error
 
 //router.use(favicon(__path + "/views/favicon.ico"));
 
-const listkey = [" Pino", "kontol", "free"];
+const listkey = ["pino", "kontol", "gratisan"];
 
 router.post("/apikey", async (req, res, next) => {
   const key = req.query.key;
@@ -7029,7 +7029,7 @@ router.get('/maker/ttp', async(req, res, next) => {
   if(!apikey) return res.json(loghandler.notparam)
   
   if(listkey.includes(apikey)) {
-  let hasil = 'https://h4ck3rs404-api.herokuapp.com/api/ttp?text='+ text +'&apikey=404Api'
+  let hasil = 'https://api.lolhuman.xyz/api/ttp5?apikey=4beae1a0842b290002227f40&text=konichiwa'+ text
   data = await fetch(hasil).then(v => v.buffer())
   await fs.writeFileSync(__path +'/tmp/ttp.png', data)
   res.sendFile(__path +'/tmp/ttp.png')
@@ -7046,7 +7046,7 @@ router.get('/maker/attp', async(req, res, next) => {
   if(!apikey) return res.json(loghandler.notparam)
   
   if(listkey.includes(apikey)) {
-  let hasil = 'https://h4ck3rs404-api.herokuapp.com/api/attp?text='+ text +'&apikey=404Api'
+  let hasil = 'https://api.lolhuman.xyz/api/attp2?apikey=4beae1a0842b290002227f40&text='+ text
   data = await fetch(hasil).then(v => v.buffer())
   await fs.writeFileSync(__path +'/tmp/attp.gif', data)
   res.sendFile(__path +'/tmp/attp.gif')
